@@ -23,12 +23,19 @@ We keep our ssh keys in the `~/.ssh` directory
 `ssh -i <ssh_key_name> ubuntu@<public ip adress>`
 
 ### How do you send in 1 file to remote server?
-scp -i  -r folder ubuntu@serverip:~/destination
+`scp -i ~/.ssh/ssh_key <file_name> ubuntu@<public_ip>:~/ubuntu/file_name`
+*NOTE!* - This command should be used once you are already in the folder where the file you're copying exists. Otherwise the file_name in the first part of the command needs to show the absolute path.
+
 ### How do you send in multiple files to remote server?
 `scp -i <ssh_key_name> -r folder ubuntu@serverip:~/destination`
+*NOTE!* - This command should be used once you are already in the folder where the file you're copying exists. Otherwise the folder in the first part of the command needs to show the absolute path. `-r` will look at all the files within the folder
 
 ### General outline of ops to get app running correctly
 
 ### Picture of App running on port 3000 and 80
+* Here is the app running on port 3000
+![](app_on_port_3000.png)
 
+* Here is the app running on port 80
+![](app_on_port_80.png)
 ### Testing if app on private IP port 3000 - curl privateip:3000
