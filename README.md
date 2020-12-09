@@ -7,7 +7,7 @@ Cloud computing is the on-demand availability of computer system resources. This
 ### What is AWS?
 Amazon Web Services provides on-demand cloud computing platforms and APIs to individuals, companies and governments. Pay as you go basis. Provided by Amazon
 
-### What is EC2?
+### What is EC2?
 Elastic Compute Cloud is a web service that provides secure resizable compute capacity in the cloud. It is used to make web-scale cloud computing easier for developers. It is part of Amazon's AWS.
 
 ### What is a SG? how do you open a port to your ip? and to the world?
